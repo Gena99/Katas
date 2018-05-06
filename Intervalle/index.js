@@ -1,14 +1,7 @@
 //En TDD, écrivez une fonction qui réduise une liste d'entiers positifs sous la forme d'intervalles.
 // Exemples : [1, 2, 3, 5, 7, 8] => [1-3, 5, 7-8]
-//fonction de comparaison de deux tableaux parce js ne sait pas le faire
-const isEqual = ( a, b ) =>{
-    if(!Array.isArray(a) || !Array.isArray(b)){return false;}
-    let a1 = new Set(a), b1 = new Set(b);
-    let difference1 = [...new Set([...a].filter(x => !b1.has(x)))]
-    let difference2 = [...new Set([...b].filter(x => !a1.has(x)))]
-    if(difference1.length === 0 && difference2.length === 0){return true};
-    return false;
-};
+//fonction de comparaison de deux tableaux parce que js ne sait pas le faire
+const areArraysEqual = require('../helpers.js');
 
 // Que me donne t-on ?
 let liste = [1, 2, 3, 5, 7, 8];
@@ -44,7 +37,7 @@ function intervalle(uneListe) {
 };
 
 //Que doit faire le test ? (prend une liste qui retourne un intervalle en appelant la fonction)
-if (isEqual(intervalle(liste),resultatAttendu)) {
+if (areArraysEqual(intervalle(liste),resultatAttendu)) {
     console.log('green');
 }
 else {
