@@ -1,5 +1,6 @@
 //En TDD, écrivez une fonction qui réduise une liste d'entiers positifs sous la forme d'intervalles.
 // Exemples : [1, 2, 3, 5, 7, 8] => [1-3, 5, 7-8]
+//fonction de comparaison de deux tableaux parce js ne sait pas le faire
 const isEqual = ( a, b ) =>{
     if(!Array.isArray(a) || !Array.isArray(b)){return false;}
     let a1 = new Set(a), b1 = new Set(b);
