@@ -1,7 +1,7 @@
 //En TDD, écrivez une fonction qui réduise une liste d'entiers positifs sous la forme d'intervalles.
 // Exemples : [1, 2, 3, 5, 7, 8] => [1-3, 5, 7-8]
 //fonction de comparaison de deux tableaux parce que js ne sait pas le faire
-const areArraysEqual = require('../helpers.js');
+const areArraysEqual = require('../TDD.js');
 
 // Que me donne t-on ?
 let liste = [1, 2, 3, 5, 7, 8];
