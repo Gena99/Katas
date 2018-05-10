@@ -1,0 +1,25 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TDD.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gena99/Katas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gena99/Katas/issues"
+  },
+  "homepage": "https://github.com/Gena99/Katas#readme",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
+}
