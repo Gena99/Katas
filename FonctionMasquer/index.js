@@ -15,8 +15,7 @@ tdd.assertStringsEquals('#alut', masquer('salut'));
 tdd.assertStringsEquals('###############ns !', masquer('salut les copains !'));
 tdd.assertStringsEquals('##########Fini', masquer('&@#!? Ayé Fini'));
 
-
-/*let texte1 = 'salut';
+let texte1 = 'salut';
 
 if (masquer(texte1) == '#alut') {
     console.log('green');
@@ -34,11 +33,12 @@ else {
     console.log('red');
 }
 let texte2 = '&@#!? Ayé Fini';
-if (masquer(texte2) == '###########Fini') {
+if (masquer(texte2) == '##########Fini') {
     console.log('green');
 }
 else {
     console.log('red');
 }
- */
+
+
 
